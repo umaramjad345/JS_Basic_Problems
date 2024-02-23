@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess the Number</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
-    guessNumber();
-    function guessNumber(){
-        const random = Math.floor(Math.random()*10 +1);
-        let guessNum = parseInt(prompt("Enter Number :"));
-        while(random!==guessNum){
-            guessNum = parseInt(prompt("Your Guess is Wrong, Try Again"));
-        }
-        if(random===guessNum){
-            document.write(`The number ${guessNum} is correct`);
-        }
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
+    function guessNumber() {
+      const random = Math.floor(Math.random() * 10 + 1);
+      let guessNum = parseInt(prompt("Enter Number :"));
+      while (random !== guessNum) {
+        guessNum = parseInt(prompt("Your Guess is Wrong, Try Again"));
+      }
+      if (random === guessNum) {
+        document.write(`The number ${guessNum} is correct`);
+      }
     }
-</script>
+    guessNumber();
+  </script>
 </html>

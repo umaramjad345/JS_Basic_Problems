@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Replacing at all Occurances of String</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     const inputStr = "Mr. red has a red house and a red car";
-    const result1 = inputStr.split('red'); // Returns an array
+    const result1 = inputStr.split("red"); // Returns an array
 
     // To remove any leading and trailing spaces with the help of Map Function
-    const result2 = result1.map(item => item.trim());
-    const repStr = result1.join('blue');// Returns a string
+    const result2 = result1.map((item) => item.trim());
+    const repStr = result1.join("blue"); // Returns a string
     console.log(result1);
     console.log(result2);
     console.log(repStr);
-</script>
+  </script>
 </html>

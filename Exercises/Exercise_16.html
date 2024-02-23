@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiplication Table</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     const num = Number(prompt("Enter Number :")); // To convert any string to number use "Number()" method
     const lowrLim = Number(prompt("Enter the Lower Limit of the Table :"));
     const upperLim = Number(prompt("Enter the Upper Limit of the Table :"));
 
-    for(let i=lowrLim; i<=upperLim; i++){
-        let prod = num*i;
-        document.write(`${num} x ${i} = ${prod}`)
+    for (let i = lowrLim; i <= upperLim; i++) {
+      let prod = num * i;
+      document.write(`${num} x ${i} = ${prod}`);
     }
 
     // const num = parseInt(prompt("Enter a Number :"));
@@ -28,5 +26,5 @@
     //     let prod = num*i;
     //     document.write(`${num} X ${i} = ${prod} \n`);
     // }
-</script>
+  </script>
 </html>

@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Check Number of Ocurrances of a Character</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     const string = prompt("Enter a String :");
     const letter = prompt("Enter a letter to check :");
-    
-    const result = countString (string, letter);
-    document.write(`The letter ${letter} comes ${result} times in the String`);
-    function countString(string, letter){
-        let count = 0;
-        for(let i=0; i<string.length-1; i++){
-            if(string.charAt(i) === letter){
-                count++;
-            }
+
+    function countString(string, letter) {
+      let count = 0;
+      for (let i = 0; i < string.length - 1; i++) {
+        if (string.charAt(i) === letter) {
+          count++;
         }
-        return count;
+      }
+      return count;
     }
-</script>
+    const result = countString(string, letter);
+    document.write(`The letter ${letter} comes ${result} times in the String`);
+  </script>
 </html>

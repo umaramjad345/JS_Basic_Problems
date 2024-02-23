@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Clone an Array</title>
-</head>
-<body>
-    <div>
-        <p>write a javascript program to create a function that clones an array, creating a new array with the same elements in the same order.</p>
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     // Using Spread Operator
     // function cloneArray(arr){
     //     return [...arr];
     // }
-    
+
     // Using from Operator
-    function cloneArray(arr){
-        return Array.from(arr);
+    function cloneArray(arr) {
+      return Array.from(arr);
     }
-    const originalArray = [11,34,54,6,78,98,97];
+    const originalArray = [11, 34, 54, 6, 78, 98, 97];
     const clonedArray = cloneArray(originalArray);
     document.write(`The Clone Array is ${clonedArray}`);
-    
-</script>
+  </script>
 </html>

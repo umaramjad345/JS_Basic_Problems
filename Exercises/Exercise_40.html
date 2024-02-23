@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Check if a String Starts/Ends with a particular Character</title>
-</head>
-<body>
-    <div>
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     // To check if a String starts with a specific Character
     // const string = prompt("Enter a String");
     // startString(string);
@@ -28,16 +27,14 @@
     // To check if a String ends with a specific Character
     const string = prompt("Enter a String");
     endString(string);
-    function endString(string){
-        if(string.endsWith('S') || string.endsWith('s')){
-            document.write(`Yes, the string starts with S`);
-        }
-        else if(string.endsWith('G') || string.endsWith('g')){
-            document.write(`Yes, the string starts with G`);
-        }
-        else{
-            document.write(`The string neither starts with G nor S`);
-        }
+    function endString(string) {
+      if (string.endsWith("S") || string.endsWith("s")) {
+        document.write(`Yes, the string starts with S`);
+      } else if (string.endsWith("G") || string.endsWith("g")) {
+        document.write(`Yes, the string starts with G`);
+      } else {
+        document.write(`The string neither starts with G nor S`);
+      }
     }
-</script>
+  </script>
 </html>

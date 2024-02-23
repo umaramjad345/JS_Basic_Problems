@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deleting Property from an Object</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     const person = {
-        name : "Akmal",
-        age : 25,
-        hobbies : ["Gardening","Music","Dancing","Coding"],
-        greet : function(){
-            document.write(`Hello World`);
-        },
-        score : {
-            math : 90,
-            science : 98
-        }
-    }
+      name: "Akmal",
+      age: 25,
+      hobbies: ["Gardening", "Music", "Dancing", "Coding"],
+      greet: function () {
+        document.write(`Hello World`);
+      },
+      score: {
+        math: 90,
+        science: 98,
+      },
+    };
     console.log(person);
     delete person.name;
     delete person.age;
+    delete person.score;
     console.log(person);
-</script>
+  </script>
 </html>

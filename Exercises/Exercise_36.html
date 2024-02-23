@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Declaring Objects using Three different ways</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     // Three ways to create objects in javascript
     // 1st Method: Using Object Literals
     // const person = {
@@ -35,7 +33,7 @@
     // const person = new Object({
     //     name : "Akmal",
     //     age : 25,
-    //     hobbies : ["Garderning","Music","Dancing","Book Reading"],
+    //     hobbies : ["Gardening","Music","Dancing","Book Reading"],
     //     greet : function (){
     //         document.write(`Hello World`);
     //     },
@@ -52,18 +50,18 @@
     // document.write(person.score.math);
 
     // 3rd Method: Using Constructor Function
-    function Person(){
-        this.name = "Akmal",
-        this.age = 20,
-        this.hobbies = ["Garderning","Music","Dancing","Book Reading"],
-        this.greet = function(){
-            document.write(`Hello World`);
-        },
-        this.score = {
-            math : 90,
-            Science : 98
-        }
-    };
+    function Person() {
+      (this.name = "Akmal"),
+        (this.age = 20),
+        (this.hobbies = ["Garderning", "Music", "Dancing", "Book Reading"]),
+        (this.greet = function () {
+          document.write(`Hello World`);
+        }),
+        (this.score = {
+          math: 90,
+          Science: 98,
+        });
+    }
     const person = new Person();
     document.write(typeof person);
     document.write(person.name);
@@ -71,5 +69,5 @@
     document.write(person.hobbies[3]);
     document.write(person.greet());
     document.write(person.score.Science);
-</script>
+  </script>
 </html>

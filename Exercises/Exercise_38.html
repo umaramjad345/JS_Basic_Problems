@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capitalize First Letter in String</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     const string = prompt("Enter a String :");
     const result = capitalize(string);
 
     document.write(`The string ${string} is now ${result}`);
-    
-    function capitalize(string){
-        const capStr = string.charAt(0).toUpperCase() + string.slice(1);
-        return capStr;
+
+    function capitalize(string) {
+      const capStr = string.charAt(0).toUpperCase() + string.slice(1);
+      return capStr;
     }
-</script>
+  </script>
 </html>

@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find the Maximum and Minimum in Array</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
-    const arr = [11,34,54,6,78,98,97];
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
+    const arr = [11, 34, 54, 6, 78, 98, 97];
     const maxNum = maxVal(arr);
     document.write(`The maximum element of the array is ${maxNum}`);
 
     const minNum = minVal(arr);
     document.write(`The minimum element of the array is ${minNum}`);
-    
-    function maxVal(arr){
-        let val=arr[0];
-        for(let i of arr){
-            if(i>val){
-                val = i;
-            }
+
+    function maxVal(arr) {
+      let val = arr[0];
+      for (let i of arr) {
+        if (i > val) {
+          val = i;
         }
-        return val;
+      }
+      return val;
     }
-    function minVal(arr){
-        let val=arr[0];
-        for(let i of arr){
-            if(i<val){
-                val = i;
-            }
+    function minVal(arr) {
+      let val = arr[0];
+      for (let i of arr) {
+        if (i < val) {
+          val = i;
         }
-        return val;
+      }
+      return val;
     }
-</script>
+  </script>
 </html>

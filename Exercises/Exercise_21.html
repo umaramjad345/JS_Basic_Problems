@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Check the Equality of Last Digit of Numbers</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     let a = parseInt(prompt("Enter 1st Number :"));
     let b = parseInt(prompt("Enter 2nd Number :"));
     let c = parseInt(prompt("Enter 3rd Number :"));
@@ -19,11 +17,10 @@
     const res2 = b % 10;
     const res3 = c % 10;
 
-    if(res1===res2 && res1===res3){
-        document.write(`${a}, ${b} and ${c} have same last digits`);
+    if (res1 === res2 && res1 === res3) {
+      document.write(`${a}, ${b} and ${c} have same last digits`);
+    } else {
+      document.write(`${a}, ${b}, and ${c} have different last digits`);
     }
-    else{
-        document.write(`${a}, ${b}, and ${c} have different last digits`);
-    }
-</script>
+  </script>
 </html>

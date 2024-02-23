@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Factorial of a Number using Recursion</title>
-</head>
-<body>
-    <div>
-        
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     const num = parseInt(prompt("Enter a Number :"));
-    if(num>0){
-        let result = factorial(num);
-        document.write(`The Factorial of ${num} is ${result}.`);
+    if (num > 0) {
+      let result = factorial(num);
+      document.write(`The Factorial of ${num} is ${result}.`);
+    } else if (num === 0) {
+      document.write(`Factorial of Zero is 1`);
+    } else {
+      document.write(`Factorial of negative numbers doesn't exist.`);
     }
-    else{
-        document.write(`Factorial of negative numbers doesn't exist.`);
+    function factorial(x) {
+      if (x === 0) {
+        return 1;
+      } else {
+        return x * factorial(x - 1);
+      }
     }
-    function factorial(x){
-        if(x===0){
-            return 1;
-        }
-        else{
-            return x * factorial(x-1);
-        }
-    }
-</script>
+  </script>
 </html>

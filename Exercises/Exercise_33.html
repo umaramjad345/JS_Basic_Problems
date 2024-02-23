@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sorting String Words in Alphabetical Order</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     const str = prompt("Enter a String :");
 
     // converting string to an array of words
-    const words = str.split(' ');
+    const words = str.split(" ");
 
     // sorting array elements
     words.sort();
 
     document.write("The Sorted words are");
-    for(let elem of words){
-        document.write(`\n ${elem} \n`);
+    for (let elem of words) {
+      document.write(`\n ${elem} \n`);
     }
-
-</script>
+  </script>
 </html>

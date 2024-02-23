@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reversing String</title>
-</head>
-<body>
-    <div>
-
-    </div>
-</body>
-<script type="text/javascript">
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
     const string = prompt("Enter a String :");
     const result = reverseString(string);
     document.write(`${result} \n`);
-    function reverseString(string){
-        let revString = "";
-        for (let i= string.length-1; i>=0; i--){
-            revString = revString + string[i];
-        }
-        return revString;
+    function reverseString(string) {
+      let revString = "";
+      for (let i = string.length - 1; i >= 0; i--) {
+        revString = revString + string[i];
+      }
+      return revString;
     }
-</script>
+  </script>
 </html>
