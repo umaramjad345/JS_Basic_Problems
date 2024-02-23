@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a Key-Value Pair an Ojbect</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    const student = {
+        name : "Akmal",
+        age : 25,
+        hobbies : ["Music","Dancing","Singing"],
+        greet : function (){
+            document.write(`Hello World`);
+        },
+        score : {
+            Science : 89,
+            Math : 99
+        }
+    }
+    // Method 1: Using Dot Notation
+    student.height = 5.4;
+    console.log(student);
+
+    // Method 2: Using Square Braket Notation
+    student["Skills"] = ['Java','C++','JS'];
+    console.log(student);
+</script>
+</html>

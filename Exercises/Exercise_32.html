@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Check a Palindrome String</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    // Using For Loop
+    // const str = prompt("Enter a string :");
+    // const result = checkPalindrome(str);
+    // document.write(result);
+    // function checkPalindrome(str){
+    //     const len = str.length;
+
+    //     for(let i=0; i<(len/2); i++){
+    //         if(str[i] !== str[len-1-i]){
+    //             return "The String isn't Palindrome";
+    //         }
+    //     }
+    //     return "The String is a Palindrome";
+    // }
+
+    // Using Built-In Functions
+    const str = prompt("Enter a string :");
+    const result = checkPalindrome(str);
+    document.write(result);
+
+    function checkPalindrome(str){
+        // Converting string to an array
+        const arrOfString = str.split('');
+
+        // Reversing array
+        const revArrOfString = arrOfString.reverse();
+
+        // Converting the reversed array to string again
+        const revStr = revArrOfString.join('');
+
+        if(str === revStr){
+            return "The string is a Palindrome";
+        }
+        else{
+            return "The string isn't a Palindrom";
+        }
+    }
+
+</script>
+</html>

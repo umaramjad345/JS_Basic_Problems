@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Check Prime Number</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    const num = parseInt(prompt("Enter a Number : "));
+
+    let isPrime = true;
+
+    if(num == 1){
+        document.write(`${num} is neither Prime or Composite`);
+    }
+    else if (num > 1) {
+        for(let i=2; i<num; i++){
+            if(num%i==0){
+                isPrime = false;
+                break;
+            }
+        }
+    }
+    else{
+        document.write(`${num} is a Negative and not a Prime`);
+    }
+    if(isPrime){
+        document.write(`${num} is a Prime Number`);
+    }
+    else{
+        document.write(`${num} is not a Prime Number`);
+    }
+</script>
+</html>

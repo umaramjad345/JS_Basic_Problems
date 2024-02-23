@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal to Binary Conversion</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    // Using While Loop
+    // const num = parseInt(prompt("Please Enter a Number :"));
+    // conertToBinary(num);
+    // function conertToBinary(x){
+    //     var bin = 0;
+    //     let rem, i=1, step=1;
+    //     while(x!==0){
+    //         rem = x % 2;
+    //         document.write(`Step ${step++}: ${x}/2, Remainder = ${rem}, Quotient = ${parseInt(x/2)} \n`);
+    //         x = parseInt(x / 2);
+    //         bin = bin + rem*i;
+    //         i = i*10;
+    //     }
+    //     document.write(`The Binary Form of Number is ${bin}.`)
+    // }
+    
+    // Using toString() Method
+    const num = parseInt(prompt("Please Enter a Number :"));
+    let result = num.toString(2);
+    document.write(`Binary : ${result}`);
+
+</script>
+</html>

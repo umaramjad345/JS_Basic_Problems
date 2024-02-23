@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Check if a Key Exists in an Object</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    // Using "in" operator
+    const person = {
+        name : "Akmal",
+        age : 25,
+        hobbies : ["Music","Dancing","Singing"],
+        greet : function(){
+            document.write(`Hello World`);
+        },
+        score : {
+            math : 90,
+            science : 98
+        }
+    }
+    // const hasKey = "age" in person;
+    // if(hasKey){
+    //     document.write(`Yes, Object has "age" key`);
+    // }
+    // else{
+    //     document.write(`No, Object doesn't have "age" key`);
+    // }
+    // person.father = "Kamal"; // Another key value pair to an object
+    // console.log(person);
+
+    // Using howOwnProperty() Method
+    const hasKey = person.hasOwnProperty('age');
+    if(hasKey){
+        document.write(`Yes, the object has "age" key`);
+    }
+    else{
+        document.write(`No, the object doesn't have "age" key`);
+    }
+
+    // Using for-in Loop
+</script>
+</html>

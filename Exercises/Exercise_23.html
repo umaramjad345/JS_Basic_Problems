@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCM Calculation</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    // Using While Loop
+    const num1 = parseInt(prompt("Enter 1st Number :"));
+    const num2 = parseInt(prompt("Enter 2nd Number :"));
+
+    let lcm = (num1 > num2) ? num1 : num2;
+    while(true){
+        if(num1 % lcm==0 && num2 % lcm==0){
+            document.write(`The LCM of ${num1} and ${num2} is ${lcm}.`);
+            break;
+        }   
+        lcm++;
+    }
+
+    // Using HCF ==> Using Formula       LCM = (Number 1 * Number 2)/HCF
+    // let hcf;
+    // const num1 = parseInt(prompt("Enter 1st Number :"));
+    // const num2 = parseInt(prompt("Enter 2nd Number :"));
+
+    // for(let i=1; i<=num1 && i<=num2; i++){
+    //     if(num1%i===0 && num2%i===0){
+    //         hcf = i;
+    //     }
+    // }
+    // let lcm = (num1*num2)/hcf;
+    // document.write(`The LCM of ${num1} and ${num2} is ${lcm}.`);
+</script>
+</html>

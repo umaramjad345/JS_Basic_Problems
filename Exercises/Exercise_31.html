@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding ASCII value of Characters</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    // Using charCodeAt() & codePointAt() Methods
+    const str = prompt("Enter a Character :");
+    const result1 = str.charCodeAt(0);
+    const result2 = str.codePointAt(0);
+    document.write(`The ASCII Value of ${str} is ${result1}.`);
+    document.write(`The ASCII Value of ${str} is ${result2}.`);
+</script>
+</html>

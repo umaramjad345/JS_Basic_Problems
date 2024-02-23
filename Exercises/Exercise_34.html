@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replacing Characters in Strings</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    const string = prompt("Enter a String : ");
+    
+    // Declaring two new variables
+    const newText1 = string.replace("red" , "blue"); // Replaces "red" with "blue" at first ocurrance
+    const newText2 = string.replaceAll("red","blue"); // Replaces  "red" with "blue" at all ocurrances
+
+    document.write(`${newText1} \n`);
+    document.write(`${newText2}`);
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Series Using Recursion</title>
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
+    // const nTerms = parseInt(prompt("Ënter the number of terms :"));
+    const nTerms = 10;
+    let memo = {};
+    if (nTerms <= 0) {
+      document.write(`Please enter a positive number`);
+    } else {
+      for (let i = 0; i <= nTerms; i++) {
+        let result = fibonacci(i);
+        document.write(result, "\n");
+      }
+    }
+    function fibonacci(num) {
+      if (num < 2) {
+        return num;
+      }
+      if (memo[num]) {
+        return memo[num];
+      }
+      memo[num] = fibonacci(num - 1) + fibonacci(num - 2);
+      return memo[num];
+    }
+    console.log(memo);
+  </script>
+</html>

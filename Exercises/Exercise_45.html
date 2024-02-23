@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count the Number of Key-Value Pairs in an Ojbect</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    const student = {
+        name : "Akmal",
+        age : 25,
+        hobbies : ["Music","Dancing","Singing"],
+        greet : function (){
+            document.write(`Hello World`);
+        },
+        score : {
+            Science : 89,
+            Math : 99
+        }
+    }
+    // Using for-in Loop
+    // let count = 0
+    // for (let elem in student){
+    //     count++;
+    // }
+    // console.log(`The length of ${student} object is ${count}`);
+
+    
+    // Using Object.entries() Method
+    // const entries = Object.entries(student); 
+    // console.log(`The length of ${student} object is ${entries.length}`);
+
+    // Using Object.key() Method
+    const objKeys = Object.keys(student); // Returns an array
+    const objLen = objKeys.length;
+    console.log(objKeys);
+    console.log(objLen); 
+</script>
+</html>
