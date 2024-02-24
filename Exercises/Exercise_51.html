@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Retrieve the First & Last Elements in an Array</title>
+  </head>
+  <body>
+    <div>
+      <p></p>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function firstElem(arr, n = 1) {
+      return arr.slice(0, n);
+    }
+    function lastElem(arr, n = 1) {
+      return arr.slice(-n);
+    }
+    const numbers = [11, 34, 54, 6, 78, 98, 97];
+    document.write(firstElem(numbers));
+    document.write(firstElem(numbers, 2));
+    document.write(`-----------------`);
+    document.write(lastElem(numbers));
+    document.write(lastElem(numbers, 3));
+  </script>
+</html>

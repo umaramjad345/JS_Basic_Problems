@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // To Replace all Instances of a Character in a String
+
+      const str = "Learning Javascript Program";
+      //--------------Using replaceAll() Method----------------
+      const result1 = str.replaceAll("a", "A");
+      console.log(result1);
+
+      //--------------Using RegEx----------------------------
+      const result2 = str.replace(/a/g, "A");
+      console.log(result2);
+
+      //--------------Using split() & joint() Methods---------
+      const splitStr = str.split("a");
+      console.log(splitStr);
+      const result3 = splitStr.join("A");
+      console.log(result3);
+    </script>
+  </body>
+</html>

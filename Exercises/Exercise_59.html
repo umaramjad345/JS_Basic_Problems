@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Merge Two Arrays without Duplicates</title>
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
+    // Using Set Operator
+    function mergeArrays(arr1, arr2) {
+      const mergedArray = [...arr1, ...arr2]; // Using Spread Operator
+
+      const uniqueArray = Array.from(new Set(mergedArray));
+
+      return uniqueArray;
+    }
+
+    const array1 = [1, 2, 3, 4, 5];
+    const array2 = [3, 4, 5, 6, 7];
+
+    const newMergedArray = mergeArrays(array1, array2);
+    console.log(newMergedArray);
+  </script>
+</html>

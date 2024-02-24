@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Current Date</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #fff;
+        }
+        .container{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .btn{
+            color: black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1><i><u>Get Current Date</u></i></h1>
+        <h4>Please Choose a Date Format</h4>
+        <div class="row">
+            <div class="col-lg-6 ms-auto me-auto">
+                <select id="dateFormats" class="form-select mt-4 mb-3">
+                    <option selected disabled> Choose a Format</option>
+                    <option value="mm-dd-yyyy">mm-dd-yyyy</option>
+                    <option value="mm/dd/yyyy">mm/dd/yyyyy</option>
+                    <option value="dd-mm-yyyy">dd-mm-yyyy</option>
+                    <option value="dd/mm/yyyy">dd/mm/yyyy</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="btn btn-outline-warning border border-warning border-3 rounded-pill" id="dateButton">Print Date</button>
+        <h2 class="text-primary fw-bold" id="displayDate"></h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        function getDate(){
+            const selectedFormat = document.querySelector("#dateFormats").value;
+            const currentDate = new Date();
+
+            const day = String(currentDate.getDate()).padStart(2,"0");
+            const month = String(currentDate.getMonth() + 1).padStart(2,"0");
+            const year = currentDate.getFullYear();
+
+            switch(selectedFormat){
+                case "mm-dd-yyyy":
+                    return `${month}-${day}-${year}`;
+                    break;
+                case "mm/dd/yyyy":
+                    return `${month}/${day}/${year}`;
+                    break;
+                case "dd-mm-yyyy":
+                    return `${day}-${month}-${year}`;
+                    break;
+                case "dd/mm/yyyy":
+                    return `${day}/${month}/${year}`;
+                    break;
+                default:
+                    return "Invalid Format";
+                    break;
+            }
+        };
+
+        function displayDate(){
+            const formattedDate = getDate();
+            document.querySelector("#displayDate").innerText = `Current Date : ${formattedDate}`;
+        }
+
+        document.querySelector("#dateButton").addEventListener("click", () => {
+            displayDate();
+        })
+
+    </script>
+</body>
+</html>

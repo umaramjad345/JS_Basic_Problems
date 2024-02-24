@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diplay Current Day & Time</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        margin: 0px;
+        padding: 0px;
+        background-color: #f4f4f4;
+      }
+      .mainDiv {
+        text-align: center;
+        margin-top: 50px;
+      }
+      h1 {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mat-5 mainDiv">
+      <h1>Display Current Day and Time</h1>
+      <div id="displayTime" class="text-primary"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script>
+      function displayDayAndTime() {
+        const currentDate = new Date();
+
+        const days = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturdey",
+        ];
+        const day = days[currentDate.getDay()];
+
+        const hours = currentDate.getHours();
+        const AMPM = hours >= 12 ? "PM" : "AM";
+        const hour = hours % 12 || 12;
+
+        const getMinutes = String(currentDate.getMinutes()).padStart(2, "0");
+        const getSeconds = String(currentDate.getSeconds()).padStart(2, "0");
+
+        document.querySelector(
+          "#displayTime"
+        ).innerHTML = `<h3>${day}</h3> <h3>${hour} : ${getMinutes} : ${getSeconds} ${AMPM} </h3>`;
+      }
+      displayDayAndTime();
+      setInterval(displayDayAndTime, 1000);
+    </script>
+  </body>
+</html>

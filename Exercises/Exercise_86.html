@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Program to extract values of objects in an array
+
+      const objArray = [
+        { a: 1, b: 2 },
+        { a: 4, b: 5 },
+        { a: 8, b: 9 },
+      ];
+
+      let arr1 = objArray.map((item) => item["a"]);
+      console.log(arr1);
+
+      let arr2 = [];
+      for (let i = 0; i < objArray.length; i++) {
+        arr2.push(objArray[i]["a"]);
+      }
+      console.log(arr2);
+    </script>
+  </body>
+</html>

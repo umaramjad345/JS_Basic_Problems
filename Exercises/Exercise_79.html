@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // program to check if an array contains a specified value
+
+      const array = ["you", "will", "learn", "javascript"];
+      const checkVal = "you";
+      const hasValue = array.includes(checkVal);
+
+      //------------------Using Icludes() Method---------------
+      if (hasValue) {
+        console.log(`Array contains '${checkVal}'`);
+      } else {
+        console.log(`Array doesn't contain '${checkVal}'`);
+      }
+
+      //-----------------Using indexOf() Method----------------
+      const result = array.indexOf(checkVal) !== -1;
+      if (result) {
+        console.log(`Array contains '${checkVal}'`);
+      } else {
+        console.log(`Array doesn't contain '${checkVal}'`);
+      }
+    </script>
+  </body>
+</html>

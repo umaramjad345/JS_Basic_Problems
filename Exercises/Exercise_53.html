@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Remove First OR Last OR nth Element of an Array/</title>
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
+    const arr = [11, 34, 54, 6, 78, 98, 97];
+
+    function firstElem(arr) {
+      arr.shift();
+      return arr;
+    }
+    function lastElem(arr) {
+      arr.pop();
+      return arr;
+    }
+    function nthElem(arr, value) {
+      const idx = arr.indexOf(value);
+      if (idx > -1) {
+        arr.splice(idx, 1);
+        return arr;
+      }
+      return arr;
+    }
+    const firstElement = firstElem(arr);
+    const lastElement = lastElem(arr);
+    const nthElement = nthElem(arr, 78);
+    console.log(firstElem);
+    console.log(lastElem);
+    console.log(nthElement);
+  </script>
+</html>

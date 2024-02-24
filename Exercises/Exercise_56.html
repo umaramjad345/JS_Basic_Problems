@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      To Remove the Duplicate Items from the Array ignoring Case Sensitivity
+    </title>
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
+    const oldArr = [
+      "Apple",
+      "banana",
+      "apple",
+      "CHERRY",
+      "Banana",
+      "cherry",
+      "apple",
+    ];
+    const newArr = remDup(oldArr);
+    console.log(newArr);
+    function remDup(oldArr) {
+      return oldArr.filter(
+        (value, index, self) =>
+          self.findIndex((val) => val.toLowerCase() === value.toLowerCase()) ===
+          index
+      );
+    }
+  </script>
+</html>

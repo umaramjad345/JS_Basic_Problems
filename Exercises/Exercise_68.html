@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // To convert an Object to String
+
+      const obj = {
+        name: "jack",
+        age: 20,
+      };
+
+      //-------------------Using JSON.stringify---------------
+      const result = JSON.stringify(obj);
+      console.log(result);
+
+      //-------------------Using String Method----------------
+      const result1 = String(obj);
+      console.log(result1);
+      console.log(typeof obj["name"]);
+      console.log(typeof obj["age"]);
+    </script>
+  </body>
+</html>

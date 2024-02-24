@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // To add an element to the start of the array
+
+      let arr = [1, 2, 3, 4, 5, 6, 7];
+
+      //------------Using Unshift() Method------------------
+      arr.unshift(10);
+      console.log(arr);
+
+      //-----------Using Splice() Method-------------------
+      arr.splice(0, 0, 20);
+      console.log(arr);
+
+      //----------Using Spread Operator-------------------
+      const newArr = [30, ...arr];
+      console.log(newArr);
+    </script>
+  </body>
+</html>

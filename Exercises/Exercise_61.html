@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Current Windows Content</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Print Current Windows Content</h1>
+      <button
+        class="btn btn-outline-primary border border-primary border-3"
+        id="printButton"
+      >
+        Print
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script>
+      function printContents() {
+        const newWindow = window.open("", "_blank");
+
+        newWindow.document.write(
+          "<html><head><title>Printed Contents</title></head><body>"
+        );
+        newWindow.document.write(document.documentElement.outerHTML);
+        newWindow.document.write("</body></html>");
+
+        newWindow.document.close();
+        newWindow.print();
+      }
+      document.getElementById("printButton").addEventListener("click", () => {
+        printContents();
+      });
+    </script>
+  </body>
+</html>

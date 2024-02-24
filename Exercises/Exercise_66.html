@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // To check if a string starts with another string
+
+      const str = "Hello World";
+      const strToCheck = "He";
+      //----------------Using Built-In Function (startsWith())------------------
+      if (str.startsWith(strToCheck)) {
+        console.log(`${str} starts with ${strToCheck}`);
+      } else {
+        console.log(`${str} doesn't start with ${strToCheck}`);
+      }
+      //-----------------Using lastIndexOf() Function------------------
+      const result = str.lastIndexOf(strToCheck) == 0;
+      if (result) {
+        console.log(`${str} starts with ${strToCheck}`);
+      } else {
+        console.log(`${str} doesn't start with ${strToCheck}`);
+      }
+      //-----------------Using RegEX--------------------------
+      const pattern = /^He/g;
+      if (pattern.test(str)) {
+        console.log(`${str} starts with ${strToCheck}`);
+      } else {
+        console.log(`${str} doesn't start with ${strToCheck}`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Array into a String</title>
+  </head>
+  <body>
+    <div></div>
+  </body>
+  <script type="text/javascript">
+    const arr = ["Apple", "Peach", "Banana", "Guava", "Lychi", "Orange"];
+    const delimiter = ",";
+    let str = arrayToString(arr, delimiter);
+    document.write(str);
+
+    function arrayToString(arr, delimiter = ",") {
+      return arr.join(delimiter);
+    }
+  </script>
+</html>

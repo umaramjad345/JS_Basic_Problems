@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Program to Generata a random sting
+
+      const characters =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+      const generateString = (length) => {
+        let result = "";
+        const charLength = characters.length;
+        for (let i = 0; i < length; i++) {
+          result += characters.charAt(Math.floor(Math.random() * charLength));
+        }
+        return result;
+      };
+      console.log(generateString(8));
+
+      // ------------------2nd Method------------------------------------
+      const result1 = Math.random().toString(36).substring(2, 10);
+      console.log(result1);
+    </script>
+  </body>
+</html>
